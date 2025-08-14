@@ -13,7 +13,7 @@ A tiny, **Windows-only**, single-EXE tool that:
 
 ## Features
 
-- **Single argument UX**:  
+- **Single argument**:  
 ```powershell
   memcap-win.exe "String"
 ```
