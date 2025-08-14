@@ -9,7 +9,7 @@ A tiny, **Windows-only**, single-EXE tool that:
 
 > ⚠️ DFIR/Research tool. Run only on systems you own or are authorized to examine.
 
----
+
 
 ## Features
 
@@ -23,7 +23,7 @@ A tiny, **Windows-only**, single-EXE tool that:
 * **ASCII + UTF-16LE** search.
 * Proceeds to scan even if WinPmem returns a **non-zero** code **as long as** a sizable dump exists.
 
----
+
 
 ## Quick start
 
@@ -36,7 +36,7 @@ A tiny, **Windows-only**, single-EXE tool that:
 
 > Press **Ctrl+C** any time → dump & helper are removed before exit.
 
----
+
 
 ## Requirements
 
@@ -45,7 +45,6 @@ A tiny, **Windows-only**, single-EXE tool that:
 * Sufficient free space on the `%TEMP%` drive (memory dumps can be many GB)
 * Security products (EDR/Defender) may need to allow the WinPmem driver
 
----
 
 ## Build it yourself
 
@@ -64,14 +63,14 @@ cargo build --release
 * [`windows-sys`](https://crates.io/crates/windows-sys) (Win32 API bindings)
 * [`ctrlc`](https://crates.io/crates/ctrlc) (Ctrl+C handler)
 
----
+
 
 ## Notes on EDR / non-zero exit codes
 
 * On some systems (VBS/HVCI, kernel protections), certain ranges are unreadable. WinPmem may still write a mostly complete dump but exit with a non-zero code.
 * This tool **continues** if a dump larger than a small threshold (e.g., 16 MiB) exists, and **then scans it**.
 
----
+
 
 ## Legal & privacy
 
@@ -79,19 +78,19 @@ cargo build --release
 * Handle, store, and dispose of dumps according to your organization’s security policies.
 * This software is provided **“as is”**, without warranty of any kind.
 
----
+
 
 ## License
 
 This project **bundles** WinPmem mini, which is **Apache-2.0** licensed.
 
----
+
 
 ## Acknowledgments
 
 * **WinPmem** authors & contributors — for an excellent, widely used Windows memory acquisition driver.
 
----
+
 
 ## Troubleshooting
 
