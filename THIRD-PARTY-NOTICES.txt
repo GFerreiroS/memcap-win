@@ -1,0 +1,6 @@
+This product bundles WinPmem (Velocidex/WinPmem), licensed under the Apache License, Version 2.0.
+No changes have been made to the binary.
+Source: https://github.com/Velocidex/WinPmem
+
+A copy of the Apache License 2.0 is included at:
+third_party/winpmem/LICENSE

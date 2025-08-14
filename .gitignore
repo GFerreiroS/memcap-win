@@ -1,0 +1,5 @@
+/target
+/*.zip
+/dist
+/.vscode
+/.idea
